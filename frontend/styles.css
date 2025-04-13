@@ -15,7 +15,7 @@ header {
   padding: 15px;
   width: 100%;
   text-align: center;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
   position: absolute;
   top: 0;
@@ -34,16 +34,17 @@ header {
 .input-container {
   position: absolute;
   bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50%;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 #user-input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
-  font-size: 16px;
 }
 #user-input:focus {
   outline: none;
@@ -55,6 +56,63 @@ header {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
   width: 100px;
+}
+#send-button:hover {
+  background-color: rgb(13, 123, 163);
+}
+#send-button:active {
+  background-color: rgb(66, 155, 187);
+}
+#user-input,
+#send-button {
+  font-size: 1.5rem;
+}
+.bot-container,
+.user-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.bot-icon,
+.user-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+.bot-icon {
+  background-color: rgb(51, 150, 186);
+}
+.user-icon {
+  background-color: #4ad637;
+}
+.bot-message,
+.user-message {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 1.5rem;
+}
+.bot-message {
+  background-color: rgb(51, 150, 186);
+}
+.user-message {
+  background-color: #4ad637;
+}
+
+.user-container {
+  justify-content: flex-end;
+}
+.chat-box {
+  height: 80%;
+  overflow-y: auto;
 }

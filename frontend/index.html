@@ -9,7 +9,14 @@
   <body>
     <header>Chat with AI</header>
     <div id="chat-container">
-      <div id="messages"></div>
+      <div id="chatBox" class="chat-box">
+        <div class="bot-container">
+          <div class="bot-icon">
+            <i class="fa-solid fa-robot fa-xl" style="color: #fbfbfa"></i>
+          </div>
+          <div class="bot-message">Hello! How can I assist you today?</div>
+        </div>
+      </div>
       <div class="input-container">
         <input
           type="text"
@@ -21,5 +28,9 @@
     </div>
 
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/61a1475d1e.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
